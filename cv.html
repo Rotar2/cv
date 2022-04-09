@@ -7,76 +7,101 @@
     <meta name="description" content="Пробное резюме TR в рамках курса HTML">
     <meta name="keywords" content="resume, cv, TR">
     <title>Resume TR</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="rotar_logo.jpg" alt="если тут чего то нет, ждите скоро будет" width="150">
-    <h1>Roman T</h1>
-    <hr>
+<div class="container">
 
-    <p>I am the head of the <strong>service department.</strong> </p>
-    <p>I love <em>traveling</em> and <em>sports.</em></p>
-   
-    <h2>my hobby</h2>
-    <ul>
-        <li>volleyball</li>
-        <li>bike ride</li>
-        <li>reading literature</li>
-    </ul>
+    <div class="info">
 
-    <h2>work experience</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>NTK KT</th>
-                <th>Engineer</th>
-                <th>2015-2017</th>
-            </tr>
-            <tr>
-                <th>NTK KT</th>
-                <th>SD manager</th>
-                <th>2017-now</th>
-            </tr>
-            <tr>
-                <th>NTK KT</th>
-                <th>Crisis manager</th>
-                <th>2021-now</th>
-            </tr>
-        </tbody>
-    </table>
+            <img src="rotar_logo.jpg" alt="если тут чего то нет: ждите, скоро будет" class="avatar">
 
-    <hr>
+            <div class="info-text">
+                <h1>Roman T</h1>
+                <hr>
 
-    <h4>social media</h4>
-        <a href="https://www.instagram.com/rotar2/" target="_blank">instagram</a> |
-        <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
+                <p>I am the head of the <strong>service department.</strong> </p>
+                <p>I love <em>traveling</em> and <em>sports.</em></p>
+            </div>
+    </div>
+        <div class="hobby card">
+                <h2>my hobby</h2>
+                <ul class="list">
+                    <li>volleyball</li>
+                    <li>bike ride</li>
+                    <li>reading literature</li>
+                </ul>
+        </div>
+
+        <div class="work card">
+                <h2>work experience</h2>
+
+                <table class="table"> 
+                    <!-- <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead> -->
+
+                    <tbody>
+                        <tr>
+                            <th>NTK KT</th>
+                            <th>Engineer</th>
+                            <th>2015-2017</th>
+                        </tr>
+                        <tr>
+                            <th>NTK KT</th>
+                            <th>SD manager</th>
+                            <th>2017-now</th>
+                        </tr>
+                        <tr>
+                            <th>IT</th>
+                            <th>!</th>
+                            <th>2022-further</th>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+
+    <div class="card">
+        <h4>social media</h4>
+            <a href="https://www.instagram.com/rotar2/" target="_blank">Instagram</a> |
+            <a href="https://t.me/rotar2" target="_blank">Telegram</a>
+    </div> 
+
+    <div class="contact">
+
+        <form action="/" class="form">
+                <h2>contact me</h2>
+        
+            <div class="form-row">
+                    
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Your email">
+                    </div>
+            </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    
+                    <textarea id="1" cols="20" rows="3" placeholder="Your message..."></textarea>
+                </div>
+        </form>
+        
+        <button type="submit" class="btn">To send</button>
+            
+    </div>
     
-    <h2>contact me</h2>
-
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your name">
-    </div>
-
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Your email">
-    </div>
-
-    <div>
-        <label for="massage">Massage:</label>
-        <br>
-        <textarea id="" cols="30" rows="4" placeholder="Your massage..."></textarea>
-    </div>
-    <button type="submit">To send</button>
-     <h3>and</h3>
-    <botton><a href="mailto:">your mail client</a></botton>
-
+    <br>
+    <br>
+    <br>
 </body>
 </html>
